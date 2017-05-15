@@ -1,0 +1,385 @@
+/*
+Theme Name: Google Material - Personal
+Theme URI: https://wordpress.org/themes/gm_personal/
+Author: Trinadh Venna
+Author URI: http://www.trinadh.me
+Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gm_personal
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+h1 {
+
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 36px;
+}
+
+img, iframe, embed {
+    max-width: 100%;
+    height: initial;
+}
+
+span.byline {
+    text-transform: uppercase;
+    color: #7d7979;
+}
+
+.entry-title{
+    font-weight:lighter;
+    margin-bottom:0px;
+}
+
+.entry-content{
+    padding-top:30px;
+}
+.breadcrumbs{
+
+    font-size:0.7rem;
+    text-transform:uppercase;
+
+}
+
+.breadcrumbs a{
+
+    color:#5a5757;
+
+}
+
+.page-ribbon {
+    width: 100%;
+    height: 35vh;
+    background-color: #0d6db3;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+#primary {
+
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-card-wide {
+    position: relative;
+    margin-bottom: 48px;
+
+}
+
+.post-card-wide header {
+    min-height: 210px;
+    background-size: cover !important;
+    background-position-x: 50% !important;
+}
+
+.mdl-card__menu {
+    z-index: 1;
+}
+
+.mdl-card__title-text {
+
+    padding-bottom: 10px;
+    min-height: 66px;
+}
+
+.mdl-layout__content {
+
+    width: 100%;
+    margin-top: -35vh;
+    margin-bottom: -50px;
+    height: 100%;
+}
+
+a.mdl-layout__tab.is-active {
+    border-bottom: 2px solid #32a3e4;
+}
+
+svg.icon {
+
+    max-width: 30px;
+}
+
+button.next-post {
+    float: right;
+}
+
+button.previous-post {
+    float: left;
+}
+
+.post-thumbnail {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.mdl-chip {
+    padding-left: 0px;
+    margin-left:8px;
+    margin-right:8px;
+}
+
+.post-related-categories {
+
+    margin-bottom: 20px;
+}
+
+.post-navigation {
+    margin-top: 10px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2d2d2d;
+    letter-spacing: 0.2px;
+    /* Search Active */
+}
+
+body.search-active .search-input {
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+}
+
+body.search-active .icon-close {
+    opacity: 1;
+    transform: rotate(-90deg);
+    z-index: 4;
+}
+
+.mdl-layout__header-row {
+    z-index: 4;
+}
+
+body.search-active .control {
+    cursor: default;
+}
+
+body.search-active .control .btn-material {
+    transform: scale(70);
+    z-index: 4;
+}
+
+body.search-active .control .icon-material-search {
+    opacity: 0;
+}
+
+/* Close Icon */
+.icon-close {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 70px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-close:hover {
+    transform: rotate(0);
+}
+
+/* Search Input */
+.search-input {
+    height: 80px;
+
+    top: 50%;
+    left: 50px;
+    margin-top: -40px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(40px, 0);
+    transition: all 0.3s ease-in-out;
+}
+
+.search-input input {
+    color: #fff;
+    font-size: 54px;
+    position: absolute;
+    right: 30%;
+    z-index: 4;
+    top: 30px;
+    border: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    outline: 0;
+    font-weight: 200;
+}
+
+.search-input ::-webkit-input-placeholder {
+    color: #EEE;
+}
+
+.search-input :-moz-placeholder {
+    color: #EEE;
+    opacity: 1;
+}
+
+.search-input ::-moz-placeholder {
+    color: #EEE;
+    opacity: 1;
+}
+
+.search-input :-ms-input-placeholder {
+    color: #EEE;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Container */
+.container {
+    padding-right: 50px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.container.container-dark {
+    background: #22313F;
+    color: #FFF;
+}
+
+/* Control btn */
+.control {
+    cursor: pointer;
+}
+
+.control .btn-material {
+    position: absolute;
+    top: -5px;
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    right: 60px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background: #e91e63;
+    outline: 0;
+    transform-origin: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.control .btn-material:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.control .icon-material-search {
+    color: #FFF;
+    position: absolute;
+    top: 9px;
+    z-index: 4;
+    font-size: 35px;
+    right: 70px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Utilities */
+.p-y-md {
+    z-index: 4;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    max-width: 60px;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+blockquote:after, blockquote:before {
+    content: '';
+}
+
+blockquote p {
+    font-size: 25px;
+    text-align: left;
+    line-height: 35px;
+    font-style:normal;
+    padding: 10px;
+    font-weight: lighter;
+    color: #0d6db3;
+    margin-bottom: 0px;
+}
+
+blockquote {
+    background: #eee;
+    padding-top: 20px;
+    border-left: 2px solid #0d6db3;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mdl-layout__title, .mdl-layout-title {
+
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+
+    #primary {
+        padding: 20px 20px;
+    }
+
+    .wp-post-image {
+        height: initial;
+    }
+
+    p img {
+        height: initial;
+    }
+
+    .search-input input {
+        top: 40%;
+        left: 5%;
+    }
+
+    blockquote p {
+        font-size: 15px;
+    }
+
+    blockquote {
+
+        padding: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+    .mdl-card {
+        width: 100%;
+    }
+
+    #primary {
+
+        padding: 50px 50px;
+    }
+}
+
