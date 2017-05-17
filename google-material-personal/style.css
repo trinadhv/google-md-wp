@@ -338,6 +338,16 @@ button {
     font-size: x-large;
 }
 
+.nav-links{
+    text-align:center;
+}
+
+.nav-links a, .nav-links span {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size:large;
+}
+
 @media (max-width: 768px) {
 
     #primary {

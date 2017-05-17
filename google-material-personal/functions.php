@@ -565,3 +565,14 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+
+function gm_get_material_button($icon){
+    $html='';
+
+    $html.='<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">'.$icon.'</i>
+        </button>';
+
+    return $html;
+}
