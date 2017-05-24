@@ -24,7 +24,7 @@ h2 {
     line-height: 36px;
 }
 
-img, iframe, embed {
+img, embed {
     max-width: 100%;
     height: initial;
 }
