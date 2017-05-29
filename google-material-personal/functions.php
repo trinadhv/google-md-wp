@@ -416,7 +416,9 @@ add_action( 'wp_head', 'gm_personal_colors_css_wrap' );
 function gm_personal_scripts() {
 	// Add custom fonts, used in the main stylesheet.
 	wp_enqueue_style( 'gm_personal-fonts', gm_personal_fonts_url(), array(), null );
-    wp_enqueue_style( 'gm_personal-css', get_stylesheet_directory_uri().'/assets/css/material.min.css', array(), null );
+    wp_enqueue_style( 'gm_font-crimson', 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet', array(), null );
+
+    wp_enqueue_style( 'gm_personal-css', get_stylesheet_directory_uri().'/assets/css/material.blue-pink.min.css', array(), null );
 
     wp_enqueue_script( 'gm_personal-material-js', 'https://code.getmdl.io/1.3.0/material.min.js', true );
 

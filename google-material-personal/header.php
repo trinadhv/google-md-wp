@@ -20,23 +20,19 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-
     <?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class(); ?> translate="no">
 
-
     <!-- Simple header with scrollable tabs. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title"><?php echo get_bloginfo(); ?></span>
-
+                <a href="<?php echo get_site_url(); ?>" class="main-title-link"><span class="mdl-layout-title"><?php echo get_bloginfo(); ?></span></a>
                 <div class="mdl-layout-spacer"></div>
-
             </div>
             <!-- Tabs -->
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
@@ -57,15 +53,7 @@
 
         </header>
 
-
-
-
-
             <div class="page-ribbon"></div>
 
         <main class="mdl-layout__content">
             <div class="page-content " ><!-- Your content goes here -->
-
-
-
-
