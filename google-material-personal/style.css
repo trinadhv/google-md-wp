@@ -24,6 +24,12 @@ h2 {
     line-height: 36px;
 }
 
+p{
+
+    font-size:17px;
+    font-weight:400;
+    line-height:1.8 !important;
+}
 img, embed {
     max-width: 100%;
     height: initial;
@@ -155,9 +161,9 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #2d2d2d;
+    color: rgba(0,0,0,.7);
     letter-spacing: 0.2px;
-    /* Search Active */
+
 }
 
 body.search-active .search-input {
