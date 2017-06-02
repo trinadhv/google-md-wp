@@ -406,3 +406,13 @@ button {
     }
 }
 
+.article-share-icon{
+
+    float:right;
+}
+
+.mdl-menu__container{
+
+    right:inherit !important;
+}
+

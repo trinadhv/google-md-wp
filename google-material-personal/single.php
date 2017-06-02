@@ -17,6 +17,20 @@ get_header(); ?>
 
 		<div id="primary" class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
 
+            <div class="article-share-icon">
+            <!-- Right aligned menu below button -->
+            <button id="share-top-right"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">share</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="share-top-right">
+                <li class="mdl-menu__item">Facebook</li>
+                <li class="mdl-menu__item">Twitter</li>
+                <li class="mdl-menu__item">Linked In</li>
+            </ul>
+                </div>
 
 			<?php
 
