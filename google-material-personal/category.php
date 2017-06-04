@@ -22,8 +22,7 @@ get_header(); ?>
 
         <div id="primary" class="mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
         <?php
-        if( function_exists('fw_ext_breadcrumbs') ) { fw_ext_breadcrumbs(); }
-        
+
         if ( is_home() && ! is_front_page() ) : ?>
             <header class="page-header">
                 <h1 class="page-title"><?php single_post_title(); ?></h1>
@@ -52,6 +51,7 @@ get_header(); ?>
                     the_posts_pagination( array(
                         'prev_text' => gm_get_material_button('navigate_before') ,
                         'next_text' =>  gm_get_material_button('navigate_next'),
+                        'screen_reader_text' => __( ' ' )
 
                     ) );
 

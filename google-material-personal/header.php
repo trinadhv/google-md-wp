@@ -20,6 +20,7 @@
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+
     <?php wp_head(); ?>
 
 </head>
@@ -42,6 +43,11 @@
                     $isactive='';
 
                     if(strcmp(get_page_link(),$menu_item->url)==0 ){
+                        $isactive=' is-active';
+
+                    }
+                    if (strpos(strtolower(get_permalink()), strtolower($menu_item->title),0)!=false){
+
                         $isactive=' is-active';
                     }
                     echo '<a href="'.$menu_item->url.'" class="mdl-layout__tab'.$isactive.'">'.$menu_item->title.'</a>';

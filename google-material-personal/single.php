@@ -24,7 +24,7 @@ get_header(); ?>
                 <i class="material-icons">share</i>
             </button>
 
-            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                 for="share-top-right">
                 <li class="mdl-menu__item">Facebook</li>
                 <li class="mdl-menu__item">Twitter</li>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 			<?php
 
-            if( function_exists('fw_ext_breadcrumbs') ) { fw_ext_breadcrumbs(); }
+
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
 

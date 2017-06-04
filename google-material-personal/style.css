@@ -54,6 +54,10 @@ span.byline {
 .entry-content{
     padding-top:30px;
 }
+
+.entry-header{
+    margin-bottom:10px;
+}
 .breadcrumbs{
 
     font-size:100% !important;
@@ -416,3 +420,14 @@ button {
     right:inherit !important;
 }
 
+
+@media(min-width:840px){
+
+    .mdl-grid--no-spacing>.mdl-cell--9-col, .mdl-grid--no-spacing>.mdl-cell--9-col-desktop.mdl-cell--9-col-desktop{
+        width:66% !important;
+    }
+
+    .mdl-grid--no-spacing>.mdl-cell--3-col, .mdl-grid--no-spacing>.mdl-cell--3-col-desktop.mdl-cell--3-col-desktop{
+        width:33% !important;
+    }
+}

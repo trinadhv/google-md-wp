@@ -420,8 +420,7 @@ function gm_personal_scripts() {
 
     wp_enqueue_style( 'gm_personal-css', get_stylesheet_directory_uri().'/assets/css/material.blue-pink.min.css', array(), null );
 
-    wp_enqueue_script( 'gm_personal-material-js', 'https://code.getmdl.io/1.3.0/material.min.js', true );
-
+    wp_enqueue_script( 'gm_personal-material-js', get_stylesheet_directory_uri().'/assets/js/material.min.js', true );
 
 	// Theme stylesheet.
 	wp_enqueue_style( 'gm_personal-style', get_stylesheet_uri() );
